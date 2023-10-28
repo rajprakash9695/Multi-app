@@ -139,42 +139,44 @@ function Signup() {
             }}
           >
             <form onSubmit={handleSubmit}>
-              <TextField
-                variant="outlined"
-                fullWidth
-                label="Name"
-                name="name"
-                value={inputData.name}
-                onChange={handleChange}
-              />
-              <TextField
-                variant="outlined"
-                type="password"
-                fullWidth
-                label="Password"
-                name="password"
-                value={inputData.password}
-                onChange={handleChange}
-              />
-              <TextField
-                variant="outlined"
-                fullWidth
-                type="email"
-                name="email"
-                label="Email"
-                value={inputData.email}
-                onChange={handleChange}
-              />
-              <TextField
-                variant="outlined"
-                fullWidth
-                type="text"
-                name="cfPassword"
-                label="Confirm Password"
-                value={inputData.cfPassword}
-                onChange={handleChange}
-              />
-              <Button type="submit">Submit</Button>
+              <Box display={"flex"} flexDirection={"column"} gap={2}>
+                <TextField
+                  variant="outlined"
+                  fullWidth
+                  label="Name"
+                  name="name"
+                  value={inputData.name}
+                  onChange={handleChange}
+                />
+                <TextField
+                  variant="outlined"
+                  type="password"
+                  fullWidth
+                  label="Password"
+                  name="password"
+                  value={inputData.password}
+                  onChange={handleChange}
+                />
+                <TextField
+                  variant="outlined"
+                  fullWidth
+                  type="email"
+                  name="email"
+                  label="Email"
+                  value={inputData.email}
+                  onChange={handleChange}
+                />
+                <TextField
+                  variant="outlined"
+                  fullWidth
+                  type="text"
+                  name="cfPassword"
+                  label="Confirm Password"
+                  value={inputData.cfPassword}
+                  onChange={handleChange}
+                />
+                <Button type="submit">Submit</Button>
+              </Box>
             </form>
             {displayData && (
               <Typography>
