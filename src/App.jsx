@@ -8,6 +8,7 @@ import { Route, Router, Routes } from "react-router-dom";
 import TextConverter from "./Components/TextConverter";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
+import LocalStorage from "./Components/LocalStorage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/todo2" element={<Todo />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/converter" element={<TextConverter />} />
+          <Route path="/local" element={<LocalStorage />} />
         </Routes>
       </div>
     </>

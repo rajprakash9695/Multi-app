@@ -25,6 +25,9 @@ function Navbar() {
         <Link to="/signup">
           <Button>Signup</Button>
         </Link>
+        <Link to="/local">
+          <Button>Local Storage</Button>
+        </Link>
       </Box>
     </Box>
   );
