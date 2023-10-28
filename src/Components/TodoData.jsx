@@ -55,7 +55,7 @@ function TodoData() {
       return item.id == id;
     });
     setToggle(false);
-    console.log(newEditItems);
+    // console.log(newEditItems);
     setInput(newEditItems.name);
     setIsEditItem(id);
   };

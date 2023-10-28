@@ -119,8 +119,8 @@ function Signup() {
       [name]: value,
     }));
   };
-  console.log("log", inputData);
-  console.log("log1", displayData);
+  // console.log("log", inputData);
+  // console.log("log1", displayData);
   const handleSubmit = (e) => {
     e.preventDefault();
     setDisplayData({ ...inputData });
