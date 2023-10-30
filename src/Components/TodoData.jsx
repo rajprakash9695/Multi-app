@@ -13,9 +13,9 @@ import {
 import React, { useEffect, useState } from "react";
 
 const getLocalItems = () => {
-  let list = localStorage.getItem("lists");
+  let list = localStorage.getItem("todo");
   if (list) {
-    return JSON.parse(localStorage.getItem("lists"));
+    return JSON.parse(localStorage.getItem("todo"));
   } else {
     return [];
   }
@@ -81,7 +81,7 @@ function TodoData() {
   };
 
   useEffect(() => {
-    localStorage.setItem("lists", JSON.stringify(items));
+    localStorage.setItem("todo", JSON.stringify(items));
   }, [items]);
 
   return (
