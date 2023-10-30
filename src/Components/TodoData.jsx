@@ -10,12 +10,21 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+const getLocalItems = () => {
+  let list = localStorage.getItem("lists");
+  if (list) {
+    return JSON.parse(localStorage.getItem("lists"));
+  } else {
+    return [];
+  }
+};
 
 function TodoData() {
   const [input, setInput] = useState("");
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(getLocalItems());
 
   const [toggle, setToggle] = useState(true);
 
@@ -70,6 +79,10 @@ function TodoData() {
   const handleRemoveAll = () => {
     setItems([]);
   };
+
+  useEffect(() => {
+    localStorage.setItem("lists", JSON.stringify(items));
+  }, [items]);
 
   return (
     <Box>
