@@ -93,7 +93,7 @@ function Signup() {
       .then((data) => data.json())
       .then((data) => {
         console.log("ok");
-        setDisplayData(data);
+        setDisplayData([...data]);
         console.log(displayData);
         console.log("ok2");
       });
