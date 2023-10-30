@@ -9,6 +9,7 @@ import TextConverter from "./Components/TextConverter";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import LocalStorage from "./Components/LocalStorage";
+import PageNotFound from "./Components/PageNotFound";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/converter" element={<TextConverter />} />
           <Route path="/local" element={<LocalStorage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </>
