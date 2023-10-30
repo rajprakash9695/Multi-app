@@ -7,7 +7,7 @@ function Home() {
       <Box
         mt={5}
         sx={{
-          height: "50vh",
+          height: "30vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
