@@ -28,6 +28,9 @@ function Navbar() {
         <Link to="/local">
           <Button>Local Storage</Button>
         </Link>
+        <Link to="/form">
+          <Button>Form</Button>
+        </Link>
       </Box>
     </Box>
   );
