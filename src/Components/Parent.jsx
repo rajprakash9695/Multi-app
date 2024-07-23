@@ -1,5 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import Appss from './DragAndDrop';
+import DragProvider from './DragProvider';
 
 let nextId = 0;
 
@@ -9,21 +13,26 @@ export default function Parent() {
 
   return (
     <div className="container">
-      <h1>Inspiring sculptors:</h1>
-      <input value={name} onChange={(e) => setName(e.target.value)} />
-      <button
-        onClick={() => {
-          setArtists([...artists, { id: nextId++, name: name }]);
-        }}
-      >
-        Add
-      </button>
-      <br />
       <ul>
-        {artists.map((artist) => (
-          <li key={artist.id}>{artist.name}</li>
-        ))}
+        <li>
+          <h1>First</h1>
+        </li>
+        <li>
+          <h1>Second</h1>
+        </li>
+        <li>
+          <h1>Third</h1>
+        </li>
+        <li>
+          <h1>Fourth</h1>
+        </li>
+        <li>
+          <h1>Five</h1>
+        </li>
       </ul>
+
+      <Appss />
+      <DragProvider />
     </div>
   );
 }
