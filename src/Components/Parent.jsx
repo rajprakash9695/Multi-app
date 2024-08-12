@@ -1,10 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import Appss from './DragAndDrop';
-import DragProvider from './DragProvider';
-
 let nextId = 0;
 
 export default function Parent() {
@@ -30,9 +24,6 @@ export default function Parent() {
           <h1>Five</h1>
         </li>
       </ul>
-
-      <Appss />
-      <DragProvider />
     </div>
   );
 }

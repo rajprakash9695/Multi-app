@@ -1,18 +1,18 @@
-import { Box, Button } from "@mui/material";
-import React from "react";
-import { Link } from "react-router-dom";
+import { Box, Button } from '@mui/material';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <Box mt={1}>
       <Box
-        display={"flex"}
-        flexWrap={"wrap"}
-        alignContent={"center"}
-        justifyContent={"center"}
-        color={"primary"}
+        display={'flex'}
+        flexWrap={'wrap'}
+        alignContent={'center'}
+        justifyContent={'center'}
+        color={'primary'}
       >
-        <Link to={"/"}>
+        <Link to={'/'}>
           <Button>HOME</Button>
         </Link>
 
@@ -30,6 +30,9 @@ function Navbar() {
         </Link>
         <Link to="/form">
           <Button>Form</Button>
+        </Link>
+        <Link to="/password">
+          <Button>Password</Button>
         </Link>
       </Box>
     </Box>

@@ -12,6 +12,7 @@ import LocalStorage from './Components/LocalStorage';
 import PageNotFound from './Components/PageNotFound';
 import Form from './Components/Form';
 import Parent from './Components/Parent';
+import PasswordGenerator from './Components/passwordGenerator';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/local" element={<LocalStorage />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/parent" element={<Parent />} />
+          <Route path="/password" element={<PasswordGenerator />} />
         </Routes>
       </div>
     </>
